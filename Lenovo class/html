@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>rensponsive</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+    <div class="rms-presence">
+	<div class="row">
+		<div class="container">
+			<div class="col-md-12 no-padding">
+				<div class="col-md-3">
+					<h1>7M +</h1>
+					<p>TV Viewers per day</p>
+				</div>
+				<div class="col-md-3">
+					<h1>10M +</h1>
+					<p>Radio Listeners per day</p>
+				</div>
+				<div class="col-md-3">
+					<h1>52M+</h1>
+					<p>Social Media Reach per month</p>
+				</div>
+				<div class="col-md-3 no-border">
+					<h1>30M+</h1>
+					<p>Digital platforms monthly pageviews</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<Title>CARDS</Title>
+<STYle>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+   .container {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+
+   }
+   .card {
+    width: 20%;
+    font-family: 'Times New Roman', Times, serif;
+    background: whitesmoke;
+    border: 1px solid black;
+
+   }
+   .cardname {
+    text-align: center;
+    padding: 50px 10px;
+    background: brown;
+    color: white;
+   }
+   .cardbody {
+    padding: 30px 10px ;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 300;
+   }
+   @media screen and ( max-width: 1000px) {
+    .card {
+        width: 40%;
+    }
+   }
+   @media screen and ( max-width: 620px) {
+    .card {
+        width: 80%;
+    }
+   }
+</STYle>
+</head>
+<body>
+    <div class="container">
+    <div class="card">
+        <h1 class="cardname"> HTML</h1>
+ <div class="cardbody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt velit, est voluptatibus soluta nemo, numquam, illum tempore recusandae sint dignissimos laboriosam nam laudantium mollitia! Distinctio officia facere rem in id!</div>
+    </div>
+    <div class="card">
+        <h1 class="cardname"> CSS</h1>
+ <div class="cardbody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt velit, est voluptatibus soluta nemo, numquam, illum tempore recusandae sint dignissimos laboriosam nam laudantium mollitia! Distinctio officia facere rem in id!</div>
+    </div>
+    <div class="card">
+        <h1 class="cardname"> PHP</h1>
+ <div class="cardbody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt velit, est voluptatibus soluta nemo, numquam, illum tempore recusandae sint dignissimos laboriosam nam laudantium mollitia! Distinctio officia facere rem in id!</div>
+    </div>
+    <div class="card">
+        <h1 class="cardname"> PYTHON </h1>
+ <div class="cardbody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt velit, est voluptatibus soluta nemo, numquam, illum tempore recusandae sint dignissimos laboriosam nam laudantium mollitia! Distinctio officia facere rem in id!</div>
+    </div>
+    </div>
+</body>
+</html>
