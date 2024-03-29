@@ -1,0 +1,105 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#video-container {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+aside {
+    flex: 0.3;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styling for participant list */
+#participant-list {
+    margin-bottom: 20px;
+}
+
+#participant-list div {
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+/* Styling for chat box */
+#chat-box {
+    margin-top: 20px;
+}
+
+#message-input {
+    width: calc(100% - 80px);
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#send-message {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#send-message:hover {
+    background-color: #45a049;
+}
+
+/* Styling for control buttons */
+#controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#controls button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#controls button:hover {
+    background-color: #005F6B;
+}

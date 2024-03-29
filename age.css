@@ -1,0 +1,202 @@
+/* General resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #004d40; /* Dark green */
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #ddd;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 200px 0;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+}
+
+/* Welcome message */
+.welcome-message {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* About section */
+.about-text {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+/* Services section */
+.services-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #00796b; /* Dark teal */
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: calc(33.33% - 20px); /* Adjust for spacing */
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Testimonies section */
+.testimonies-section {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+}
+
+.testimonial {
+    display: flex;
+    background-color: #01579b; /* Dark blue */
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: calc(50% - 20px); /* Adjust for spacing */
+}
+
+/* Contact section */
+.contact-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #004d40; /* Dark green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #00695c; /* Dark green - darker shade */
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-media {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.social-media li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-media li:last-child {
+    margin-right: 0;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
+}

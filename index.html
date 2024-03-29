@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Conference</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Web Conference</h1>
+    </header>
+
+    <main>
+        <div id="video-container">
+            <!-- Video streams will be dynamically added here -->
+        </div>
+        <aside>
+            <div id="participant-list">
+                <!-- Participant list will be dynamically added here -->
+            </div>
+            <div id="chat-box">
+                <!-- Chat messages will be dynamically added here -->
+                <input type="text" id="message-input" placeholder="Type your message...">
+                <button id="send-message">Send</button>
+            </div>
+        </aside>
+    </main>
+ <div id="controls">
+        <button id="toggle-camera">Toggle Camera</button>
+        <button id="toggle-microphone">Toggle Microphone</button>
+        <button id="share-screen">Share Screen</button>
+        <button id="record-session">Record Session</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Web Conference</p>
+    </footer>
+    
+   
+    <script src="script.js" defer></script>
+</body>
+</html>
