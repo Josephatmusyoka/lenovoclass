@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Indie Flower', cursive;
+            background-image: url('group_phto.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .calculator {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+            color: #555;
+            font-family: 'Indie Flower', cursive;
+            text-align: center;
+        }
+        input[type="text"]::placeholder {
+            color: #153e24;
+            font-family: 'Indie Flower', cursive;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: 'Indie Flower', cursive;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="calculator">
+    <h2>Age Calculator</h2>
+    <input type="text" id="birthdate" placeholder="Enter your birthdate (DD/MM/YYYY)">
+    <br>
+    <button onclick="calculateAge()">Calculate Age</button>
+    <div id="result"></div>
+</div>
+
+<script>
+    function calculateAge() {
+        var birthdateStr = document.getElementById('birthdate').value;
+        var parts = birthdateStr.split("/");
+        var birthdate = new Date(parts[2], parts[1] - 1, parts[0]); // Year, month (0-indexed), day
+        var today = new Date();
+
+        var ageYears = today.getFullYear() - birthdate.getFullYear();
+        var ageMonths = today.getMonth() - birthdate.getMonth();
+        var ageDays = today.getDate() - birthdate.getDate();
+        var ageHours = today.getHours() - birthdate.getHours();
+
+        if (ageMonths < 0 || (ageMonths === 0 && ageDays < 0)) {
+            ageYears--;
+            ageMonths += 12;
+        }
+
+        if (ageDays < 0) {
+            ageDays += new Date(today.getFullYear(), today.getMonth(), 0).getDate();
+            ageMonths--;
+        }
+
+        if (ageHours < 0) {
+            ageHours += 24;
+            ageDays--;
+        }
+
+        var ageMessage = "You are " + ageYears + " years, " + ageMonths + " months, " + ageDays + " days, and " + ageHours + " hours old.";
+        document.getElementById('result').innerHTML = ageMessage;
+    }
+</script>
+
+</body>
+</html>
